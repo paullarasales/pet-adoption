@@ -33,13 +33,13 @@
     <div class="flex items-center justify-center w-full h-screen bg-gray-100">
         <div class="w-9/12 h-5/6 shadow-md overflow-hidden sm:rounded-lg flex">
             <!-- Left side content -->
-            <div class="w-1/2 bg-white h-full flex flex-col items-center justify-center">
+            <div class="w-1/2 bg-white h-full flex flex-col items-center justify-between">
                 <!-- Top -->
-                <div class="flex flex-col justify-start w-full mt-10 p-4">
+                <div class="flex flex-col justify-start w-ful p-4">
                     <h1 class="text-6xl text-gray-400">Changing Lives, One Adoption at a Time.</h1>
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src={{ asset('images/dogs.jpg') }}>
+                    <img src={{ asset('images/no-bg-dog.png') }}>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
                     @csrf
 
                     <div class="flex flex-col items-start justify-start w-96">
-                        <h1 class="text-3xl font-semibold">
+                        <h1 class="text-4xl font-semibold">
                             Sign up
                         </h1>
                     </div>
@@ -76,15 +76,6 @@
                         <input type="password" id="password" name="password" class="outline-none border-white shadow" placeholder="Enter your password" required>
                     </div>
 
-                    <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
 
                     <div class="flex items-center justify-between mt-4">
                         <a href="{{ route('login') }}" class="no-underline text-sm font-medium text-gray-600 hover:text-gray-900">Already registered?<span class="text-blue-500">Login</span></a>
