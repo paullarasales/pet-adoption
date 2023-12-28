@@ -33,13 +33,13 @@
     <div class="flex items-center justify-center w-full h-screen bg-gray-100">
         <div class="w-9/12 h-5/6 shadow-md overflow-hidden sm:rounded-lg flex">
             <!-- Left side content -->
-            <div class="w-1/2 bg-white h-full flex flex-col items-center justify-between">
+            <div class="w-1/2 bg-white h-full flex flex-col items-center justify-evenly">
                 <!-- Top -->
                 <div class="flex flex-col justify-start w-ful p-4">
                     <h1 class="text-6xl text-gray-400">Changing Lives, One Adoption at a Time.</h1>
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src={{ asset('images/no-bg-dog.png') }}>
+                    <img src={{ asset('images/help.png') }}>
                 </div>
             </div>
 
